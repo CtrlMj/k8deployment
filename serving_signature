@@ -1,0 +1,20 @@
+signature_def['serving_default']:
+  The given SavedModel SignatureDef contains the following input(s):
+    inputs['inputs'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 299, 299, 3)
+        name: serving_default_inputs:0
+  The given SavedModel SignatureDef contains the following output(s):
+    outputs['output_0'] tensor_info:
+        dtype: DT_FLOAT
+        shape: (-1, 10)
+        name: StatefulPartitionedCall:0
+  Method name is: tensorflow/serving/predict
+The MetaGraph with tag set ['serve'] contains the following ops: {'Mul', 'Mean', 'StatefulPartitionedCall', 'VarHandleOp', 'DepthwiseConv2dNative', 'ShardedFilename', 'Rsqrt', 'AddV2', 'AssignVariableOp', 'RestoreV2', 'SaveV2', 'ReadVariableOp', 'MatMul', 'StringJoin', 'DisableCopyOnRead', 'MaxPool', 'StaticRegexFullMatch', 'VarIsInitializedOp', 'Placeholder', 'MergeV2Checkpoints', 'Const', 'BiasAdd', 'Conv2D', 'Relu', 'NoOp', 'Select', 'Pack', 'Identity', 'Sub'}
+
+Concrete Functions:
+  Function Name: '_default_save_signature'
+    Option #1
+      Callable with:
+        Argument #1
+          inputs: TensorSpec(shape=(None, 299, 299, 3), dtype=tf.float32, name='inputs')
