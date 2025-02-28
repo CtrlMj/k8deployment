@@ -1,0 +1,2 @@
+SERVICE_HOSTNAME=sklearn-iris.default.example.com
+curl -v -H "Host: ${SERVICE_HOSTNAME}" http://localhost:8080/v1/models/sklearn-iris:predict -d @./kserve/iris-input.json
